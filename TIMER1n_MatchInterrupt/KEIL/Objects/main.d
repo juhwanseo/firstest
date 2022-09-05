@@ -1,0 +1,32 @@
+./objects/main.o: \
+  ..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main.c \
+  ..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h \
+  ..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h \
+  C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h \
+  C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h \
+  C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h \
+  ..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_adc.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_crc.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_intc.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_scu.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h \
+  ..\..\..\..\Drivers\Include\A31G12x_hal_wt.h \
+  ..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h

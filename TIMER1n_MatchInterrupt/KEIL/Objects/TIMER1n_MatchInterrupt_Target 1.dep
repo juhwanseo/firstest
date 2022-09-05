@@ -1,0 +1,297 @@
+Dependencies for Project 'TIMER1n_MatchInterrupt', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6180000::V6.18::ARMCLANG
+F (..\..\..\..\Core\Device\ABOV\A31G12x\Source\system_A31G12x.c)(0x5EA150B8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/system_a31g12x.o -MD)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+F (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.c)(0x62FB6202)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_it.o -MD)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h)(0x62FC9C35)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_adc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_crc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h)(0x5F5B0426)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wt.h)(0x60C849FF)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h)(0x5F17DBD6)
+F (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_PortInit.c)(0x5F17DBD6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_portinit.o -MD)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h)(0x62FC9C35)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_adc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_crc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h)(0x5F5B0426)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wt.h)(0x60C849FF)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h)(0x5F17DBD6)
+F (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_SystemClock.c)(0x5F17DBD6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_systemclock.o -MD)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h)(0x62FC9C35)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_adc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_crc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h)(0x5F5B0426)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wt.h)(0x60C849FF)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h)(0x5F17DBD6)
+F (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main.c)(0x630ED2E4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/main.o -MD)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h)(0x62FC9C35)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_adc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_crc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h)(0x5F5B0426)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wt.h)(0x60C849FF)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h)(0x5F17DBD6)
+F (..\key.c)(0x630ED2C0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/key.o -MD)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h)(0x62FC9C35)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_adc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_crc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h)(0x5F5B0426)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wt.h)(0x60C849FF)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h)(0x5F17DBD6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625252C6)
+F (..\fnd.c)(0x630ED2BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/fnd.o -MD)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h)(0x62FC9C35)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_adc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_crc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h)(0x5F5B0426)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wt.h)(0x60C849FF)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h)(0x5F17DBD6)
+F (.\timer.c)(0x62FCA2C1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/timer.o -MD)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\main_conf.h)(0x62FC9C35)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wtidky.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_adc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_crc.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_fmc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_i2cn.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_lcd.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pwr.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_sculv.h)(0x5F17DBB6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer2n.h)(0x5F5B0426)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer3n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_usart1n.h)(0x5F17DBB8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wdt.h)(0x5F17DBBA)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_wt.h)(0x60C849FF)
+I (..\..\..\..\Examples\TIMER1n\TIMER1n_MatchInterrupt\A31G12x_it.h)(0x5F17DBD6)
+F (..\..\..\..\Core\Device\ABOV\A31G12x\Source\ARM\startup_A31G12x.s)(0x5D5B42F8)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g-I.\RTE\_Target_1-IC:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM0plus\Include--pd "__UVISION_VERSION SETA 537"--pd "_RTE_ SETA 1"--pd "ARMCM0P SETA 1"--pd "_RTE_ SETA 1"--list .\listings\startup_a31g12x.lst--xref -o .\objects\startup_a31g12x.o--depend .\objects\startup_a31g12x.d)
+F (..\..\..\..\Option\KEIL\option_A31G12x.s)(0x5D5B7D1A)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g-I.\RTE\_Target_1-IC:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM0plus\Include--pd "__UVISION_VERSION SETA 537"--pd "_RTE_ SETA 1"--pd "ARMCM0P SETA 1"--pd "_RTE_ SETA 1"--list .\listings\option_a31g12x.lst--xref -o .\objects\option_a31g12x.o--depend .\objects\option_a31g12x.d)
+F (..\..\..\..\Drivers\Source\A31G12x_hal_intc.c)(0x5F17DBB4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_hal_intc.o -MD)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_intc.h)(0x5F17DBB4)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+F (..\..\..\..\Drivers\Source\A31G12x_hal_pcu.c)(0x60C84E1F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_hal_pcu.o -MD)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+F (..\..\..\..\Drivers\Source\A31G12x_hal_scu.c)(0x5FC1D7BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_hal_scu.o -MD)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+F (..\..\..\..\Drivers\Source\A31G12x_hal_timer1n.c)(0x5F17DBB6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_hal_timer1n.o -MD)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_timer1n.h)(0x5F17DBB8)
+F (..\..\..\..\Drivers\Source\A31G12x_hal_uartn.c)(0x5F193414)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_hal_uartn.o -MD)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_scu.h)(0x5FC1D39A)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+F (..\..\..\..\Drivers\Source\A31G12x_hal_debug_frmwrk.c)(0x5F17DBB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../Core/CMSIS/Include -I ../../../../Core/Device/ABOV/A31G12x/Include -I ../../../../Drivers/Include -I ../../../../Examples/TIMER1n/TIMER1n_MatchInterrupt-I./RTE/_Target_1-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/watlogic22/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0plus/Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM0P -D_RTE_ -D__NO_EMBEDDED_ASM-o ./objects/a31g12x_hal_debug_frmwrk.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625252C8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625252C6)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_debug_frmwrk.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_uartn.h)(0x5F17DBB8)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\A31G12x.h)(0x5F192A60)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F3CCE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625252C8)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F3CCE)
+I (C:\Users\watlogic22\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F3CCE)
+I (..\..\..\..\Core\Device\ABOV\A31G12x\Include\system_A31G12x.h)(0x5E8EDCF8)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_aa_types.h)(0x5F17DBB2)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_libcfg.h)(0x5F17DBB4)
+I (..\..\..\..\Drivers\Include\A31G12x_hal_pcu.h)(0x5F17DBB6)
