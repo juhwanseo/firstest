@@ -1,0 +1,67 @@
+;--------------INTERRUPT
+
+1. 벡터 지정
+2. 인터럽트 세팅
+3. 서비스 루틴 구현
+
+ ;INTERRUPT VECTOR AREA---------------
+    VECTOR  0CEH, TMAINT
+    VECTOR  0D0H, TAOINT
+
+    VECTOR  0D2H, TMBINT
+
+    VECTOR  0D4H, TMCINT
+    VECTOR  0D6H, PWMINT
+
+    VECTOR  0D8H, TMD0INT
+    VECTOR  0DAH, TD0OVINT
+    VECTOR  0DCH, TMD1INT
+    VECTOR  0DEH, TD1OVINT
+
+    VECTOR  0E4H, SIOINT
+    VECTOR  0E6H, WATINT
+
+    VECTOR  0E8H, U0TXINT
+    VECTOR  0EAH, U0RXINT
+    VECTOR  0ECH, U1TXINT
+    VECTOR  0EEH, U1RXINT
+
+    VECTOR  0F0H, EX10INT
+    VECTOR  0F2H, EX11INT
+    VECTOR  0F4H, EX12INT
+    VECTOR  0F6H, EX13INT
+
+    VECTOR  0F8H, EX40INT
+    VECTOR  0FAH, EX41INT
+    VECTOR  0FCH, EX42INT
+    VECTOR  0FEH, EX43INT
+;-----------------INTERRUPT VECTOR AREA
+
+;INTERRUPT SETTING----------------------
+    LD	SYM, #00000001B     ;SYSTEM MODE SET = 0X01은 EI랑 같음
+
+    EI 						;전역 인터럽트 활성화
+    LD	IMR, #00000001B
+    LD	IPR, #00010000B
+
+    LD  TADATA, #09H        ;10MHz/1024 -> 102.4uS *10 = 1.024mS MATCH 
+    ;LD TADATA, #63H         ; " * 100 = 10.24 mS MATCH
+    LD  TACON, #00000010B   ;INTERVAL MOD, MATCH INTERRUPT ENABLE 
+    ;LD  TACON, #00000000B   ;INTERVAL MOD, MATCH INTERRUPT DISABLE 
+
+
+  	LD     	INTPND, #00000000B ; PENDING
+
+;----------------------INTERRUPT SETTING
+
+;ISR------------------------------------
+TMAINT: ;인터럽트 라벨 즉 ISR에 해당
+    
+    ;AND INTPND, #02H ;PENDING CLEAR
+    ;LD     	P1PND, #00000000B
+    
+    ;XOR P0, #01H ;서비스 루틴은 CNT++나 FLAGS SET/CLEAR 와 같은 최소 동작만 작성
+    ;INC CNT
+    
+    IRET ;인터럽트 종료
+;------------------------------------ISR    
