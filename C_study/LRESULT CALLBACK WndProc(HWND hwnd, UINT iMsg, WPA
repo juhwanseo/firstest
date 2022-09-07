@@ -1,0 +1,52 @@
+LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+     HDC hdc;
+
+     switch (iMsg) //메시지 처리
+     {
+         case WM_CREATE:
+          break;
+
+         case WM_KEYDOWN: //키보드 메시지 [누를 경우]
+              switch (wParam)
+              {
+                  case VK_LEFT:
+                   MessageBox(hwnd, L"방향키 왼쪽 버튼 눌림", L"키보드 메시지박스", NULL);
+                   break;
+                  case VK_RIGHT:
+                   MessageBox(hwnd, L"방향키 오른쪽 버튼 눌림", L"키보드 메시지박스", NULL);
+                   break;
+                  case VK_UP:
+                   MessageBox(hwnd, L"방향키 위쪽 버튼 눌림", L"키보드 메시지박스", NULL);
+                   break;
+                  case VK_DOWN:
+                   MessageBox(hwnd, L"방향키 아래쪽 버튼 눌림", L"키보드 메시지박스", NULL);
+                   break;
+              }
+          break;
+
+         case WM_KEYUP: //키보드 메시지 [뗀 경우]
+              switch (wParam)
+              {
+                  case VK_LEFT:
+                   MessageBox(hwnd, L"방향키 왼쪽 버튼 뗌", L"키보드 메시지박스", NULL);
+                   break;
+                  case VK_RIGHT:
+                   MessageBox(hwnd, L"방향키 오른쪽 버튼 뗌", L"키보드 메시지박스", NULL);
+                   break;
+                  case VK_UP:
+                   MessageBox(hwnd, L"방향키 위쪽 버튼 뗌", L"키보드 메시지박스", NULL);
+                   break;
+                  case VK_DOWN:
+                   MessageBox(hwnd, L"방향키 아래쪽 버튼 뗌", L"키보드 메시지박스", NULL);
+                   break;
+              }
+          break;
+
+     case WM_DESTROY:
+      PostQuitMessage(0);
+      break;
+      
+     }
+     return DefWindowProc(hwnd, iMsg, wParam, lParam);   //처리되지 않은 메시지 반환
+}
