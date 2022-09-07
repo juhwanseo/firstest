@@ -12,7 +12,7 @@ uint8_t* debounce (void)
 			if(Cnt[i] > 5) 
 			{
 				Cnt[i] = 0;
-				Old[i] = ((PF->INDR)&0xF);
+				Old[i] = ((PF->INDR)&0xF); //get key value
 			}
 		}
 		else
