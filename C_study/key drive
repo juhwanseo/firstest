@@ -1,0 +1,68 @@
+
+uint16_t keycharttering (void)
+{
+	uint16_t key = 0;
+	for(uint8_t i=0; i<4; i++)
+	{
+		PA->OUTDR = (0xF^(1<<i)); //scan sequence
+		if(old[i] != ((PF->INDR)&0xF))
+		{
+			cnt[i]++;
+			if(cnt[i] > 5) 
+			{
+				cnt[i] = 0;
+				old[i] = ((PF->INDR)&0xF);
+			}
+		}
+		else
+		{
+			cnt[i] = 0;
+		}
+		key += old[i]<<(i*4);	
+	}
+	return key; //[0xFFFF]
+}
+
+void KeyStatus (void)
+{
+	static uint16_t status = 0;
+	static uint16_t rCnt;
+	static uint16_t keycopy;
+	static uint16_t keyCnt;
+	
+	uint16_t value = keycharttering();
+		
+	switch(status)
+	{
+		case 0 : // push 
+			if(value != 0xFFFF){
+				keyCnt = 0;
+				status = 1;
+				keycopy = value;
+				rCnt = KEY_RPT_START_TIM; 
+				PostMessage(CTRL_TASK, WM_KEYDOWN, value, keyCnt);
+			} //else value == 0xFFFF is no key
+			break;
+			
+		case 1 : // key down
+			keyCnt++;
+			if(rCnt == 0){
+//				status = 1; //add statuus
+				rCnt = KEY_RPT_TIM;
+				PostMessage(CTRL_TASK, WM_KEYDOWN, value, keyCnt);
+			}
+			if(keycopy != value) status = 2;
+			break;
+			
+		case 2 : // key up
+			keyCnt = 0;
+			rCnt = 0;
+		  status = 0;
+		  keycopy = 0xFFFF;
+			PostMessage(CTRL_TASK, WM_KEYUP, value, keyCnt);
+			break;
+		
+		default : break;
+	}
+	if(rCnt>0) rCnt--;
+}
