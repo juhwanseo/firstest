@@ -57,9 +57,9 @@ void KeyStatus (void)
 		case 2 : // key up
 			keyCnt = 0;
 			rCnt = 0;
-		  status = 0;
-		  keycopy = 0xFFFF;
-			PostMessage(CTRL_TASK, WM_KEYUP, value, keyCnt);
+		  	status = 0;
+			PostMessage(CTRL_TASK, WM_KEYUP, keycopy, keyCnt);
+		 	keycopy = 0xFFFF;
 			break;
 		
 		default : break;
