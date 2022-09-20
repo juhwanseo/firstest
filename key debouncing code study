@@ -1,0 +1,32 @@
+uint16_t Debouncing(struct chattvari key, Pn_Type* Px, uint16_t Msk, uint16_t Shift, uint16_t Cnt)
+{
+	if( key.old != ((Px->INDR)&Msk)>>Shift )
+	{
+		key.cnt++;
+		if( key.cnt > Cnt ) 
+		{
+			key.cnt = 0;
+			key.old = ((Px->INDR)&Msk)>>Shift; 			
+		}
+	}
+	else
+	{
+		key.cnt = 0;
+	}
+	
+	return key.old;
+}
+
+/*/
+void SwitchTask(void)
+{
+	uint16_t output;
+	
+	//DIP Chattering
+	output = Debouncing(DIP, ( Pn_Type* ) PC, MASKING_DIPSW_DATA, SHIFT_1BIT, KEY_CHATT_CNT);
+	SetID(output);
+	
+	//DOOR Chattering
+	output = Debouncing(DIP, ( Pn_Type* ) PE, MASKING_DOORSW_DATA, SHIFT_1HEX, KEY_CHATT_CNT);
+	GetDoorTrig(output);
+}
