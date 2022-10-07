@@ -1,0 +1,25 @@
+
+uint8_t Hex2Dec(uint8_t ucDat)
+{
+	uint8_t ucRes;
+	
+	ucRes = (ucDat>>4);//*10;
+	ucRes = ucRes*10;
+	ucRes |= (ucDat&0x0f);
+	
+	return ucRes;
+}
+
+
+uint8_t Dec2Hex(uint8_t ucDat)
+{
+	uint8_t ucRes;
+	
+	ucRes = (ucDat/10);
+	ucRes = ucRes<<4;
+	
+	ucRes |= (ucDat%10);
+	
+	return ucRes;
+}
+
