@@ -1,0 +1,128 @@
+// ring buffer size
+#define RING_BUF_SIZE      32
+
+//******************************************************************************
+// Type
+//******************************************************************************
+
+typedef struct
+{
+   uint32_t    tx_head;                /**<  Tx ring buffer head index */
+   uint32_t    tx_tail;                /**<  Tx ring buffer tail index */
+   uint32_t    rx_head;                /**<  Rx ring buffer head index */
+   uint32_t    rx_tail;                /**<  Rx ring buffer tail index */
+   uint8_t     tx[RING_BUF_SIZE];      /**<  Tx data ring buffer */
+   uint8_t     rx[RING_BUF_SIZE];      /**<  Rx data ring buffer */
+} RING_BUF;
+
+//******************************************************************************
+// Macro
+//******************************************************************************
+
+// Buf mask
+#define __BUF_MASK                        ( RING_BUF_SIZE - 1 )
+
+// Check buf is full or not
+#define __BUF_IS_FULL( head, tail )       ( (tail & __BUF_MASK) == ((head+1) & __BUF_MASK) )
+
+// Check buf will be full in next receiving or not
+#define __BUF_WILL_FULL( head, tail )     ( (tail & __BUF_MASK) == ((head+2) & __BUF_MASK) )
+
+// Check buf is empty
+#define __BUF_IS_EMPTY( head, tail )      ( (head & __BUF_MASK) == (tail & __BUF_MASK) )
+
+// Reset buf
+#define __BUF_INCR( bufidx )              ( bufidx = (bufidx+1) & __BUF_MASK )
+
+/* Private variables -------------------------------------------------------- */
+//******************************************************************************
+// Variable
+//******************************************************************************
+
+// ring buffer
+RING_BUF                rb;
+
+// Current Tx Interrupt enable state
+volatile FlagStatus     TxIntStat;
+
+//******************************************************************************
+// Function
+//******************************************************************************
+
+/*-------------------------------------------------------------------------*//**
+ * @brief         UART transmit function (ring buffer used)
+ * @param         None
+ * @return        None
+ *//*-------------------------------------------------------------------------*/
+void IntTransmit( void )
+{
+   // Disable THRE interrupt
+   HAL_UART_ConfigInterrupt( ( UARTn_Type* )UART1, UARTn_INTCFG_THRE, DISABLE );
+
+   /* Wait until THR empty */
+   while( HAL_UART_CheckBusy( ( UARTn_Type* )UART1 ) == SET );
+
+   while( !__BUF_IS_EMPTY( rb.tx_head, rb.tx_tail ) )
+   {
+      /* Move a piece of data into the transmit FIFO */
+      if( HAL_UART_Transmit( ( UARTn_Type* )UART1, ( uint8_t* )&rb.tx[rb.tx_tail], 1, NONE_BLOCKING ) )
+      {
+         /* Update transmit ring FIFO tail pointer */
+         __BUF_INCR( rb.tx_tail );
+      }
+      else
+      {
+         break;
+      }
+   }
+
+   /* If there is no more data to send, disable the transmit
+      interrupt - else enable it or keep it enabled */
+   if( __BUF_IS_EMPTY( rb.tx_head, rb.tx_tail ) )
+   {
+      HAL_UART_ConfigInterrupt( ( UARTn_Type* )UART1, UARTn_INTCFG_THRE, DISABLE );
+      // Reset Tx Interrupt state
+      TxIntStat = RESET;
+   }
+   else
+   {
+      // Set Tx Interrupt state
+      TxIntStat = SET;
+      HAL_UART_ConfigInterrupt( ( UARTn_Type* )UART1, UARTn_INTCFG_THRE, ENABLE );
+   }
+}
+
+/*-------------------------------------------------------------------------*//**
+ * @brief         UART receive function (ring buffer used)
+ * @param         None
+ * @return        None
+ *//*-------------------------------------------------------------------------*/
+void IntReceive( void )
+{
+   uint8_t     tmpc;
+   uint32_t    rLen;
+
+   while( 1 )
+   {
+      // Call UART receive function in UART driver
+      rLen = HAL_UART_Receive( ( UARTn_Type* )UART1, &tmpc, 1, NONE_BLOCKING );
+
+      // If data received
+      if( rLen )
+      {
+         /* Check if buffer is more space
+          * If no more space, remaining character will be trimmed out
+          */
+         if( !__BUF_IS_FULL( rb.rx_head, rb.rx_tail ) )
+         {
+            rb.rx[rb.rx_head] = tmpc;
+            __BUF_INCR( rb.rx_head );
+         }
+      }
+      // no more data
+      else
+      {
+         break;
+      }
+   }
+}
