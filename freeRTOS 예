@@ -1,0 +1,98 @@
+int main( void )
+{
+  prvSetupHardware();
+
+  xLCDQueue = xQueueCreate( mainLCD_QUEUE_SIZE, sizeof( xLCDMessage ) );
+
+   vStartBlockingQueueTasks( mainBLOCK_Q_PRIORITY );
+  vCreateBlockTimeTasks();
+  vStartSemaphoreTasks( mainSEM_TEST_PRIORITY );
+  vStartPolledQueueTasks( mainQUEUE_POLL_PRIORITY );
+  vStartIntegerMathTasks( mainINTEGER_TASK_PRIORITY );
+   vStartLEDFlashTasks( mainFLASH_TASK_PRIORITY );
+  vAltStartComTestTasks( mainCOM_TEST_PRIORITY, mainCOM_TEST_BAUD_RATE, mainCOM_TEST_LED );
+
+  /* user setting point begin*/
+  xTaskCreate( vCheckTask, "Check", mainCHECK_TASK_STACK_SIZE, NULL, mainCHECK_TASK_PRIORITY, NULL ); 
+  xTaskCreate( vLCDTask, "LCD", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+  /* user setting point end*/
+
+  vCreateSuicidalTasks( mainCREATOR_TASK_PRIORITY );
+
+  vSetupTimerTest();
+
+  vTaskStartScheduler(); //
+
+  return 0;
+}
+
+/*user setting point begin*/
+
+// Task#1
+void vLCDTask( void *pvParameters )
+{
+  xLCDMessage xMessage;
+
+   prvConfigureLCD();
+   LCD_DrawMonoPict( ( unsigned long * ) pcBitmap );
+   for( ;; )
+   {
+      while( xQueueReceive( xLCDQueue, &xMessage, portMAX_DELAY ) != pdPASS );
+      printf( ( char const * ) xMessage.pcMessage );
+   }
+}
+
+/*-----------------------------------------------------------*/
+// Task#2
+static void vCheckTask( void *pvParameters )
+{
+  TickType_t xLastExecutionTime;
+  xLCDMessage xMessage;
+  static signed char cPassMessage[ mainMAX_MSG_LEN ];
+  extern unsigned short usMaxJitter;
+
+  xLastExecutionTime = xTaskGetTickCount();
+  xMessage.pcMessage = cPassMessage;
+
+  for( ;; )
+  {
+    vTaskDelayUntil( &xLastExecutionTime, mainCHECK_DELAY );
+
+    if( xAreBlockingQueuesStillRunning() != pdTRUE )
+    {
+      xMessage.pcMessage = "ERROR IN BLOCK Q\n";
+    }
+    else if( xAreBlockTimeTestTasksStillRunning() != pdTRUE )
+    {
+      xMessage.pcMessage = "ERROR IN BLOCK TIME\n";
+    }
+    else if( xAreSemaphoreTasksStillRunning() != pdTRUE )
+    {
+      xMessage.pcMessage = "ERROR IN SEMAPHORE\n";
+    }
+    else if( xArePollingQueuesStillRunning() != pdTRUE )
+    {
+      xMessage.pcMessage = "ERROR IN POLL Q\n";
+    }
+    else if( xIsCreateTaskStillRunning() != pdTRUE )
+    {
+      xMessage.pcMessage = "ERROR IN CREATE\n";
+    }
+    else if( xAreIntegerMathsTaskStillRunning() != pdTRUE )
+    {
+      xMessage.pcMessage = "ERROR IN MATH\n";
+    }
+       else if( xAreComTestTasksStillRunning() != pdTRUE )
+       {
+          xMessage.pcMessage = "ERROR IN COM TEST\n";
+       }
+       else
+       {
+         sprintf( ( char * ) cPassMessage, "PASS [%uns]\n", ( ( unsigned long ) usMaxJitter ) * mainNS_PER_CLOCK );
+        }
+
+     xQueueSend( xLCDQueue, &xMessage, portMAX_DELAY );
+  }
+}
+
+  /* user setting point end*/
